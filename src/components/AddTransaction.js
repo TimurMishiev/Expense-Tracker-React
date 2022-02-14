@@ -12,7 +12,9 @@ export const AddTransaction = () => {
 		const newTransaction = {
 			id: Math.floor(Math.random() * 100000000),
 			text,
+			amount: +amount,
 		};
+		addTransaction(newTransaction);
 	};
 
 	return (
